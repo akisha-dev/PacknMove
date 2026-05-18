@@ -2,21 +2,99 @@
 <html>
     <head>
         <title>Landing Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          playfair: ['"Playfair Display"', 'serif'],
+        }
+      }
+    }
+  }
+</script>
     </head>
-    <body>
-        <div class="header">
-            <div class="name">PacknMove</div>
-            <nav>
-                <a href="#Home" >Home</a>
-                <a href="#Services" >Service</a>
-                <a href="#About">About</a>
-                <a href="#Contact">Contact</a>
-            </nav>
-            <button class="book">Book our Services</button>
-        </div>
-
-
+    <body class="bg-[#FDF6EC] font-sans">
+       <div class="flex
+        justify-between
+        items-center 
+        px-10
+        py-4
+        bg-[#5C3D2E]
+        text-[#fdf6ec]
+        sticky 
+        top-0 
+        z-50
+        shadow-lg
         
-    </body>
+        ">
+  <div class="text-[#fdf6ec] text-2xl font-bold
+  ">
+    PacknMove</div>
+    <nav class="flex gap-8">
+    <a href="#home" class="text-orange-100
+     hover:text-orange-400">Home</a>
+    <a href="#services" class="text-orange-100 
+    hover:text-orange-400">Services</a>
+    <a href="#about" class="text-orange-100
+     hover:text-orange-400">About</a>
+    <a href="#contact" class="text-orange-100
+     hover:text-orange-400">Contact</a>
+  </nav>
+  <button class="bg-orange-600
+   text-[#fdf6ec]
+   p-2
+   rounded-md
+   hover:bg-orange-700">
+    Book our Services
+  </button>
+</div>
+
+<section id="home" class=" bg-[#5C3D2E]
+ min-h-screen
+ flex
+ flex-col
+ justify-center 
+ items-center 
+ text-center 
+ px-10
+ py-20 
+ text-[#fdf6ec]">
+  <h1 class="font-playfair
+   text-6xl
+   font-bold
+   mb-8">
+    Your Trusted Partner For Seamless Relocation
+  </h1>
+  <p class="text-[#fdf6ec]
+  text-lg 
+  max-w-xl
+  mt-3 
+  mb-7">
+    Experience stress-free moving with our professional packers and movers.
+    We handle your belongings with care, ensuring a smooth transition to your new home.
+  </p>
+  <div class="flex
+   gap-4">
+    <button class="bg-orange-600
+     px-6
+     py-3 
+     rounded-md 
+     hover:bg-orange-700
+     hover:scale-105 
+     transition-transform duration-200">Book Now</button>
+    <button class="border 
+    border-white
+     px-6 
+     py-3
+     rounded-md
+     hover:border-orange-400
+     hover:text-orange-400">Our Services</button>
+  </div>
+</section>
+</body>
 </html>
